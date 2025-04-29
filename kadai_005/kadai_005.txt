@@ -1,0 +1,43 @@
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial (main)
+$ mkdir git_challenge
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial (main)
+$ cd git_challenge
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial/git_challenge (main)
+$ git init
+Initialized empty Git repository in C:/Users/kyksf/git_tutorial/git_challenge/.git/
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial/git_challenge (main)
+$ echo "" > hello_world.txt
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial/git_challenge (main)
+$ echo "Hello, world!" >> hello_world.txt
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 931e660] hello_world.txtを追加
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main 55bc5fa] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+kyksf@LAPTOP-GUMGR19G MINGW64 ~/git_tutorial/git_challenge/kadai_005 (main)
+$ git log --oneline
+55bc5fa (HEAD -> main) 日本語訳を追記
+931e660 hello_world.txtを追加
+
